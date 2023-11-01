@@ -28,6 +28,15 @@ module.exports = {
         test: /\.s[sc]ss$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
+      {
+        test: /\.(png|jpe?g|gif|webp)$/,
+        type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: 10 * 1024, //小于10kb的图表会被base64处理
+          },
+        },
+      },
     ],
   },
   // 插件
