@@ -15,3 +15,7 @@
 #### 4.WebPack脚本指令语法
 - npx webpack打包
 - npx webpack serve启动开发服务器
+
+#### 5.相关资料
+- webpack官网:https://webpack.docschina.org/
+- 尚硅谷webpack文档:https://xxpromise.gitee.io/webpack5-docs/
