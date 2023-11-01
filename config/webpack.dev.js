@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/main.js',
+  devtool: 'cheap-module-source-map', //开启sourcemap,能纠错
   output: {
     path: undefined, // 开发模式没有输出，不需要指定输出目录
     filename: 'static/js/main.js', // 将 js 文件输出到 static/js 目录中
@@ -83,6 +84,7 @@ module.exports = {
     host: 'localhost', // 启动服务器域名
     port: '3000', // 启动服务器端口号
     open: true, // 是否自动打开浏览器
+    hot:true//开启hmr
   },
   mode: 'development',
 }
