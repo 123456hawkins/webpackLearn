@@ -48,7 +48,16 @@ module.exports = {
         },
       },
       {
+        // 处理字体资源
         test: /\.(ttf|woff2?)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'static/media/[hash:8][ext][query]',
+        },
+      },
+      {
+        // 处理音视频资源
+        test: /\.(ttf|woff2?|map4|map3|avi|mp3)$/,
         type: 'asset/resource',
         generator: {
           filename: 'static/media/[hash:8][ext][query]',
